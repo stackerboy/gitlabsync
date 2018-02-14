@@ -1,3 +1,4 @@
-# Sync GitLab Repository between on-premise to cloud
+# Sync GitLab Repository from On-premise to AWS 
 
-## This project involves 
+## This project demonstrates a simple scripted apporach on how to scale you GitLab repository to AWS
+
