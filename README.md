@@ -16,3 +16,10 @@ The easiest way to replicate as is to enable a DB replication which can be done 
 - [x] Developer should be able to checkin to Cloud based repository in case of any failure.
 - [x] Changes has to be synced back or restored back during the failover
 - [x] Sync frequency has to be setup manually and is based on the repository size and number
+
+Program-Flow
+
+Main.py
+**Script calls the other scripts to achieve the sync thorugh a step by step process**
+
+
