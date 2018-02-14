@@ -23,4 +23,23 @@ Program-Flow
 
 *Script calls the other scripts to achieve the sync thorugh a step by step process*
 
+- [x] **dirempty.py**
+*This uses writing output to files and string manipulation .This script will clear of any previous data stored in the file*
+
+- [x] **grpcreate.py**
+*This step will compare the groups in on-premise and AWS GitLab servers and write the difference to a file.The file contains the newly added groups in on-premise.The next steps in the script calls the GitLab API and exeuctes the Group creation REST API call and create the same group in AWS GitLab.
+
+- [x] **project_create_all_latest_wip.py**
+
+*This phase will compare the projects in the groups and write the difference to a file .The file now contains the newly added porjects and its parent  group ID in a file ,Next step will create new projects tages to the same group id.*
+
+- [x] **clone_and_push_new_projectsv4.py**
+
+*To update any changes to AWS GitLab repository we need to push the changes to the AWS Project repo path.To achieve this step we follow the below approach .
+Clone all the projects to a new directory
+Pull the changes to the directory 
+
+
+
+
 
