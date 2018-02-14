@@ -41,6 +41,20 @@ Program-Flow
 Clone all the projects to a new directory
 Pull the changes to the directory 
 
+- [x] **changedir_sync.py**
+
+*Loop thorugh all the clonned directories and run the gitpull command to sync the directory and keeping the changes upto date with production*
+
+
+AWS PreReq
+ -  Create instance
+ -  Create an EBS storage for clonnig the repo
+ -  Install python and GItLab CE and access the url.
+ -  Launch the instance 
+ -  Create a VPN connection from on-premise to AWS GitLab
+ -  Enable cronjob to run the script at regular intervals.
+
+
 
 
 
