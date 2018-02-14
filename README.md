@@ -24,9 +24,11 @@ Program-Flow
 *Script calls the other scripts to achieve the sync thorugh a step by step process*
 
 - [x] **dirempty.py**
+
 *This uses writing output to files and string manipulation .This script will clear of any previous data stored in the file*
 
 - [x] **grpcreate.py**
+
 *This step will compare the groups in on-premise and AWS GitLab servers and write the difference to a file.The file contains the newly added groups in on-premise.The next steps in the script calls the GitLab API and exeuctes the Group creation REST API call and create the same group in AWS GitLab.
 
 - [x] **project_create_all_latest_wip.py**
