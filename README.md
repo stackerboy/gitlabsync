@@ -11,4 +11,4 @@ Use for this particular apporach comes when you have a single GitLab Server Comm
 
 The easiest way to replicate as is to enable a DB replication which can be done using GitLab Enterprise editionwhich is chargable wrt the users .Same implementation in GitLab CE is not yet supported by GitLab and moreover this has to be implemented in the same DC because of latency constraints.
 
-[x] GitLab has a hierachry structure which has Groups-SubGroups-Projects.
+-[x] GitLab has a hierachry structure which has Groups-SubGroups-Projects.
