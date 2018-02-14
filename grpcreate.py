@@ -7,7 +7,7 @@ import subprocess, shlex
 #COMPARING GROUPS AND CREATING ANY NEW
 ##STAGE-1
 ##DC GITLAB
-allGroups       = urllib2.urlopen("http://10.10.2.63/api/v3/groups?private_token=BhzxixsqEG_WEyWxnTR5&per_page=100")
+allGroups       = urllib2.urlopen("http://onpremgitip/api/v3/groups?private_token=BhzxixsqEG_WEyWxnTR5&per_page=100")
 allGroupsDict   = json.loads(allGroups.read().decode())
 for thisGroup in allGroupsDict:
         thisGroupID = str(thisGroup['name'])
@@ -18,7 +18,7 @@ for thisGroup in allGroupsDict:
         g=open('file2.txt','a')
         call(["echo",thisGroupID],stdout=g)
 ###AWS GITLAB
-allGroupsAWS       = urllib2.urlopen("http://10.10.2.64/api/v3/groups?private_token=QcySbaKWbRisJ7sKWF3j&per_page=100")
+allGroupsAWS       = urllib2.urlopen("http://AWSGitIP/api/v3/groups?private_token=Qcy&per_page=100")
 allGroupsAWSDict   = json.loads(allGroupsAWS.read().decode())
 for thisGroup in allGroupsAWSDict:
         thisGroupID = str(thisGroup['name'])
@@ -67,6 +67,6 @@ with open("path_grp.txt") as file1:
         for i,j in zip(lines,path):
                 line='name='+str(i)+'&'+'path='+str(j)
                 #path='path='+str(i)
-                url="http://10.10.2.64/api/v3/groups?private_token=QcySbaKWbRisJ7sKWF3j"
+                url="http://AWSGitIP/api/v3/groups?private_token=Qcy"
                 call(["curl","-X","POST","-d",line,url])
 ##END OF STAGE-1
