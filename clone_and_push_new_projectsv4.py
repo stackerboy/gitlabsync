@@ -4,14 +4,14 @@ import json
 import subprocess, shlex
 import os
 
-allProjectsAWS = urllib2.urlopen("http://10.10.2.64/api/v3/projects?private_token=QcySbaKWbRisJ7sKWF3j&per_page=100&page=1")
+allProjectsAWS = urllib2.urlopen("http://AWSGitIP/api/v3/projects?private_token=Qcy&per_page=100&page=1")
 allProjectsAWS1   = json.loads(allProjectsAWS.read().decode())
 for thisGroup in allProjectsAWS1:
         g=open('project_aws.txt','a')
         #j=str(thisGroup['ssh_url_repo'])
         #j=j.replace('gitlab.example.com', 'fw-dw-apacmaven.cyber.bestinet.com')
         call(["echo",str(thisGroup['ssh_url_to_repo'])],stdout=g)
-allProjectsAWS3 = urllib2.urlopen("http://10.10.2.64/api/v3/projects?private_token=QcySbaKWbRisJ7sKWF3j&per_page=100&page=2")
+allProjectsAWS3 = urllib2.urlopen("http://AWSGitIP/api/v3/projects?private_token=Qcy&per_page=100&page=2")
 allProjectsAWS4   = json.loads(allProjectsAWS3.read().decode())
 for thisGroup in allProjectsAWS4:
         g=open('project_aws.txt','a')
@@ -35,7 +35,7 @@ with open("list_dir.txt") as file1:
 for i in path:
 #	line='name='+str(i)+'&'+'path='+str(j)
                 #path='path='+str(i)
-                #url="http://10.10.2.64/api/v3/groups?private_token=QcySbaKWbRisJ7sKWF3j"
+                #url="http://AWSGitIP/api/v3/groups?private_token=QcySbaKWbRisJ7sKWF3j"
                 #call(["cd","/home/gituser/git_clone"])
                 #print i
                 #call(["ls"])
