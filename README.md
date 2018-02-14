@@ -19,7 +19,7 @@ The easiest way to replicate as is to enable a DB replication which can be done 
 
 Program-Flow
 
-Main.py
+- [x] **Main.py**
 
 *Script calls the other scripts to achieve the sync thorugh a step by step process*
 
